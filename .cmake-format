@@ -2,11 +2,8 @@ format:
   tab_size: 2
   line_width: 100
   dangle_parens: true
-  max_pargs_hwrap: 3
 
 always_wrap:
-- add_executable
-- add_library
 - target_compile_definitions
 - target_include_directories
 - target_link_libraries
