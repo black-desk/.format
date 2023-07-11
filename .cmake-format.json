@@ -1,0 +1,186 @@
+{
+        "format": {
+                "tab_size": 8,
+                "line_width": 80,
+                "dangle_parens": true,
+                "max_prefix_chars": 10,
+                "max_subgroups_hwrap": 1,
+                "max_rows_cmdline": 2,
+                "max_pargs_hwrap": 1,
+                "enable_sort": true,
+                "autosort": true,
+                "separate_ctrl_name_with_space": true,
+                "separate_fn_name_with_space": true,
+                "always_wrap": [
+                        "target_compile_definitions",
+                        "target_include_directories",
+                        "target_link_libraries",
+                        "target_sources",
+                        "target_compile_features"
+                ]
+        },
+        "parse": {
+                "additional_commands": {
+                        "target_compile_features": {
+                                "pargs": 1,
+                                "kwargs": {
+                                        "PUBLIC": 1,
+                                        "PRIVATE": 1,
+                                        "INTERFACE": 1
+                                }
+                        },
+                        "target_include_directories": {
+                                "pargs": 1,
+                                "flags": [
+                                        "SYSTEM",
+                                        "BEFORE",
+                                        "AFTER"
+                                ],
+                                "kwargs": {
+                                        "PUBLIC": 1,
+                                        "PRIVATE": 1,
+                                        "INTERFACE": 1
+                                }
+                        },
+                        "target_link_libraries": {
+                                "pargs": 1,
+                                "kwargs": {
+                                        "PUBLIC": 1,
+                                        "PRIVATE": 1,
+                                        "INTERFACE": 1
+                                }
+                        },
+                        "cpmaddpackage": {
+                                "pargs": {
+                                        "nargs": "*",
+                                        "flags": []
+                                },
+                                "spelling": "CPMAddPackage",
+                                "kwargs": {
+                                        "NAME": 1,
+                                        "FORCE": 1,
+                                        "VERSION": 1,
+                                        "GIT_TAG": 1,
+                                        "DOWNLOAD_ONLY": 1,
+                                        "GITHUB_REPOSITORY": 1,
+                                        "GITLAB_REPOSITORY": 1,
+                                        "GIT_REPOSITORY": 1,
+                                        "SVN_REPOSITORY": 1,
+                                        "SVN_REVISION": 1,
+                                        "SOURCE_DIR": 1,
+                                        "DOWNLOAD_COMMAND": 1,
+                                        "FIND_PACKAGE_ARGUMENTS": 1,
+                                        "NO_CACHE": 1,
+                                        "GIT_SHALLOW": 1,
+                                        "URL": 1,
+                                        "URL_HASH": 1,
+                                        "URL_MD5": 1,
+                                        "DOWNLOAD_NAME": 1,
+                                        "DOWNLOAD_NO_EXTRACT": 1,
+                                        "HTTP_USERNAME": 1,
+                                        "HTTP_PASSWORD": 1,
+                                        "EXCLUDE_FROM_ALL": 1,
+                                        "SOURCE_SUBDIR": 1,
+                                        "OPTIONS": "+"
+                                }
+                        },
+                        "cpmfindpackage": {
+                                "pargs": {
+                                        "nargs": "*",
+                                        "flags": []
+                                },
+                                "spelling": "CPMFindPackage",
+                                "kwargs": {
+                                        "NAME": 1,
+                                        "FORCE": 1,
+                                        "VERSION": 1,
+                                        "GIT_TAG": 1,
+                                        "DOWNLOAD_ONLY": 1,
+                                        "GITHUB_REPOSITORY": 1,
+                                        "GITLAB_REPOSITORY": 1,
+                                        "GIT_REPOSITORY": 1,
+                                        "SVN_REPOSITORY": 1,
+                                        "SVN_REVISION": 1,
+                                        "SOURCE_DIR": 1,
+                                        "DOWNLOAD_COMMAND": 1,
+                                        "FIND_PACKAGE_ARGUMENTS": 1,
+                                        "NO_CACHE": 1,
+                                        "GIT_SHALLOW": 1,
+                                        "URL": 1,
+                                        "URL_HASH": 1,
+                                        "URL_MD5": 1,
+                                        "DOWNLOAD_NAME": 1,
+                                        "DOWNLOAD_NO_EXTRACT": 1,
+                                        "HTTP_USERNAME": 1,
+                                        "HTTP_PASSWORD": 1,
+                                        "EXCLUDE_FROM_ALL": 1,
+                                        "SOURCE_SUBDIR": 1,
+                                        "OPTIONS": "+"
+                                }
+                        },
+                        "cpmdeclarepackage": {
+                                "pargs": {
+                                        "nargs": "*",
+                                        "flags": []
+                                },
+                                "spelling": "CPMDeclarePackage",
+                                "kwargs": {
+                                        "NAME": 1,
+                                        "FORCE": 1,
+                                        "VERSION": 1,
+                                        "GIT_TAG": 1,
+                                        "DOWNLOAD_ONLY": 1,
+                                        "GITHUB_REPOSITORY": 1,
+                                        "GITLAB_REPOSITORY": 1,
+                                        "GIT_REPOSITORY": 1,
+                                        "SVN_REPOSITORY": 1,
+                                        "SVN_REVISION": 1,
+                                        "SOURCE_DIR": 1,
+                                        "DOWNLOAD_COMMAND": 1,
+                                        "FIND_PACKAGE_ARGUMENTS": 1,
+                                        "NO_CACHE": 1,
+                                        "GIT_SHALLOW": 1,
+                                        "URL": 1,
+                                        "URL_HASH": 1,
+                                        "URL_MD5": 1,
+                                        "DOWNLOAD_NAME": 1,
+                                        "DOWNLOAD_NO_EXTRACT": 1,
+                                        "HTTP_USERNAME": 1,
+                                        "HTTP_PASSWORD": 1,
+                                        "EXCLUDE_FROM_ALL": 1,
+                                        "SOURCE_SUBDIR": 1,
+                                        "OPTIONS": "+"
+                                }
+                        },
+                        "packageproject": {
+                                "pargs": {
+                                        "nargs": "*",
+                                        "flags": []
+                                },
+                                "spelling": "packageProject",
+                                "kwargs": {
+                                        "NAME": 1,
+                                        "VERSION": 1,
+                                        "INCLUDE_DIR": 1,
+                                        "INCLUDE_DESTINATION": 1,
+                                        "BINARY_DIR": 1,
+                                        "COMPATIBILITY": 1,
+                                        "VERSION_HEADER": 1,
+                                        "DEPENDENCIES": "+"
+                                }
+                        },
+                        "cpmusepackagelock": {
+                                "pargs": 1,
+                                "spelling": "CPMUsePackageLock"
+                        },
+                        "cpmregisterpackage": {
+                                "pargs": 1,
+                                "spelling": "CPMRegisterPackage"
+                        },
+                        "cpmgetpackageversion": {
+                                "pargs": 2,
+                                "spelling": "CPMGetPackageVersion"
+                        }
+                }
+        }
+}
