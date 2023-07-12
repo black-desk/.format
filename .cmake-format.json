@@ -3,30 +3,19 @@
                 "tab_size": 8,
                 "line_width": 80,
                 "dangle_parens": true,
-                "max_prefix_chars": 10,
-                "max_subgroups_hwrap": 1,
-                "max_rows_cmdline": 2,
-                "max_pargs_hwrap": 1,
                 "enable_sort": true,
                 "autosort": true,
                 "separate_ctrl_name_with_space": true,
-                "separate_fn_name_with_space": true,
-                "always_wrap": [
-                        "target_compile_definitions",
-                        "target_include_directories",
-                        "target_link_libraries",
-                        "target_sources",
-                        "target_compile_features"
-                ]
+                "separate_fn_name_with_space": true
         },
         "parse": {
                 "additional_commands": {
                         "target_compile_features": {
                                 "pargs": 1,
                                 "kwargs": {
-                                        "PUBLIC": 1,
-                                        "PRIVATE": 1,
-                                        "INTERFACE": 1
+                                        "PUBLIC": "+",
+                                        "PRIVATE": "+",
+                                        "INTERFACE": "+"
                                 }
                         },
                         "target_include_directories": {
@@ -37,17 +26,17 @@
                                         "AFTER"
                                 ],
                                 "kwargs": {
-                                        "PUBLIC": 1,
-                                        "PRIVATE": 1,
-                                        "INTERFACE": 1
+                                        "PUBLIC": "+",
+                                        "PRIVATE": "+",
+                                        "INTERFACE": "+"
                                 }
                         },
                         "target_link_libraries": {
                                 "pargs": 1,
                                 "kwargs": {
-                                        "PUBLIC": 1,
-                                        "PRIVATE": 1,
-                                        "INTERFACE": 1
+                                        "PUBLIC": "+",
+                                        "PRIVATE": "+",
+                                        "INTERFACE": "+"
                                 }
                         },
                         "cpmaddpackage": {
