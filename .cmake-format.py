@@ -114,7 +114,18 @@ with section("parse"):
     'target_sources': { 'kwargs': { 'INTERFACE': '+',
                                     'PRIVATE': '+',
                                     'PUBLIC': '+'},
-                        'pargs': 1}}
+                        'pargs': 1},
+    'find_package': { 'kwargs': { 'NAMES': '+',
+                                  'COMPONENTS': '+',
+                                  'ORIGINAL_COMPONENTS': '+'},
+                      'flags': ['REQUIRED', 'EXACT', 'QUITE', 'MODULE', 'GLOBAL', 'NO_POLICY_SCOPE', 'BYPASS_PROVIDER', ],
+                      'pargs': "1+"},
+    'set_source_files_properties': { 'kwargs': { 'PROPERTIES': '+',
+                                                 'DIRECTORY': '+',
+                                                 'TARGET_DIRECTORY': '+' },
+                                    'pargs':'*'},
+}
+        
 
 # -----------------------------
 # Options affecting formatting.
@@ -139,6 +150,7 @@ with section("format"):
   # than the tab width by more than this amount, then force reject un-nested
   # layouts.
   max_prefix_chars = 0
+  max_pargs_hwrap = 3
 
   # If a candidate layout is wrapped horizontally but it exceeds this many
   # lines, then reject the layout.
@@ -156,5 +168,6 @@ with section("format"):
     "target_sources",
     "target_link_libraries",
     "target_include_directories",
+    "set_source_files_properties",
   ]
 
