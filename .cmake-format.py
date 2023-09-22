@@ -154,35 +154,7 @@ with section("parse"):
 # Options affecting formatting.
 # -----------------------------
 with section("format"):
-    # How wide to allow formatted cmake files
     line_width = 80
-
-    # How many spaces to tab for indent
-    tab_size = 8
-
-    # If an argument group contains more than this many sub-groups (parg or kwarg
-    # groups) then force it to a vertical layout.
-    max_subgroups_hwrap = 2
-
-    # If a statement is wrapped to more than one line, than dangle the closing
-    # parenthesis on its own line.
-    dangle_parens = True
-
-    # If the statement spelling length (including space and parenthesis) is larger
-    # than the tab width by more than this amount, then force reject un-nested
-    # layouts.
-    max_prefix_chars = 0
-    max_pargs_hwrap = 3
-
-    # If a candidate layout is wrapped horizontally but it exceeds this many
-    # lines, then reject the layout.
-    max_lines_hwrap = 1
-
-    # A dictionary mapping layout nodes to a list of wrap decisions. See the
-    # documentation for more information.
-    layout_passes = {"KwargGroupNode": [(0, True)]}
-
-    separate_fn_name_with_space = (True,)
 
     always_wrap = [
         "project",
