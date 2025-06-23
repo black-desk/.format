@@ -10,11 +10,16 @@ end_of_line = lf
 insert_final_newline = true
 trim_trailing_whitespace = true
 indent_style = tab
+indent_size = 8
 tab_width = 8
 
 [*.{js,md,ts,yml,yaml}]
 indent_style = space
 indent_size = 2
+
+[*.rs]
+indent_style = space
+indent_size = 4
 
 [{third_party,vendor,external,node_modules}/**]
 ignore = true
