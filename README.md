@@ -6,7 +6,7 @@ SPDX-License-Identifier: MIT
 
 # .format
 
-[zh_CN](README.zh_CN.md) | en
+en | [zh_CN](README.zh_CN.md)
 
 > [!WARNING]
 > This English README is translated from the Chinese version
