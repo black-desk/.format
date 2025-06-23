@@ -1,0 +1,20 @@
+# SPDX-FileCopyrightText: 2025 Chen Linxuan <me@black-desk.cn>
+#
+# SPDX-License-Identifier: MIT
+
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+indent_style = tab
+tab_width = 8
+
+[*.{js,md,ts,yml,yaml}]
+indent_style = space
+indent_size = 2
+
+[{third_party,vendor,external,node_modules}/**]
+ignore = true
