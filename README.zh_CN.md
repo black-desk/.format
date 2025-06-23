@@ -6,7 +6,7 @@ SPDX-License-Identifier: MIT
 
 # .format
 
-zh_CN | [en](README.md)
+[en](README.md) | zh_CN
 
 我的个人项目使用的代码格式化配置文件。
 
