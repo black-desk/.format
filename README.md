@@ -43,6 +43,8 @@ ln -s .format/.clang-format
 
 ## License
 
+Unless otherwise specified, files in this project are open-sourced under the MIT license.
+
 This project complies with the [REUSE specification](https://reuse.software/spec-3.3/).
 
 You can use [reuse-tool](https://github.com/fsfe/reuse-tool) to generate the SPDX list for this project:

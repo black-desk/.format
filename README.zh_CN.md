@@ -39,6 +39,8 @@ ln -s .format/.clang-format
 
 ## 许可证
 
+如无特殊说明，该项目中的文件以MIT许可证开源。
+
 该项目遵守[REUSE规范](https://reuse.software/spec-3.3/)。
 
 你可以使用[reuse-tool](https://github.com/fsfe/reuse-tool)生成这个项目的SPDX列表：
