@@ -10,7 +10,8 @@ SPDX-License-Identifier: MIT
 
 我的个人项目使用的代码格式化配置文件。
 
-该项目会在我的其他个人项目中以git submodule的方式被引用并通过dependabot保持更新。
+该项目会在我的其他个人项目中以git
+submodule的方式被引用并通过dependabot保持更新。
 
 ## 使用
 
