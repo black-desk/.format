@@ -9,12 +9,14 @@ SPDX-License-Identifier: MIT
 en | [zh_CN](README.zh_CN.md)
 
 > [!WARNING]
-> This English README is translated from the Chinese version
-> using AI and may contain errors.
+>
+> This English README is translated from the Chinese version using AI and may
+> contain errors.
 
 Code formatting configuration files used in my personal projects.
 
-This project is referenced as a git submodule in my other personal projects and kept up-to-date through dependabot.
+This project is referenced as a git submodule in my other personal projects and
+kept up-to-date through dependabot.
 
 ## Usage
 
@@ -43,11 +45,14 @@ ln -s .format/.clang-format
 
 ## License
 
-Unless otherwise specified, files in this project are open-sourced under the MIT license.
+Unless otherwise specified, files in this project are open-sourced under the MIT
+license.
 
-This project complies with the [REUSE specification](https://reuse.software/spec-3.3/).
+This project complies with the
+[REUSE specification](https://reuse.software/spec-3.3/).
 
-You can use [reuse-tool](https://github.com/fsfe/reuse-tool) to generate the SPDX list for this project:
+You can use [reuse-tool](https://github.com/fsfe/reuse-tool) to generate the
+SPDX list for this project:
 
 ```bash
 reuse spdx

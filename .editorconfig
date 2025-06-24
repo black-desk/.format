@@ -13,7 +13,7 @@ indent_style = tab
 indent_size = 8
 tab_width = 8
 
-[*.{js,md,ts,yml,yaml}]
+[{*.{js,md,ts,yml,yaml,json},.prettierrc}]
 indent_style = space
 indent_size = 2
 
